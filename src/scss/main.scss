@@ -1,2 +1,50 @@
-// This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+//? FONTS
+
+@font-face {
+  font-family: "LatoWebThin";
+  src: url("../fonts/Lato-Thin.woff2") format("woff2"),
+    url("../fonts/Lato-Thin.woff") format("woff");
+  font-style: normal;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "LatoWebLight";
+  src: url("../fonts/Lato-Light.woff2") format("woff2"),
+    url("../fonts/Lato-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "LatoWeb";
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"),
+    url("../fonts/Lato-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "Bona";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/BonaNova-Regular.woff2") format("woff2"),
+    url("../fonts/BonaNova-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "BonaItalic";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/BonaNova-Italic.woff2") format("woff2"),
+    url("../fonts/BonaNova-Italic.woff") format("woff");
+}
+
+//? RESET
+
+:root {
+  font-size: 62.5%;
+}
