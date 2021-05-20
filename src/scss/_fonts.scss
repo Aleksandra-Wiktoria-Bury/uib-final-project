@@ -1,0 +1,25 @@
+//? FONTS
+
+@font-face {
+  font-family: "LatoWeb";
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"),
+    url("../fonts/Lato-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoWebBlack";
+  src: url("../fonts/Lato-Black.woff2") format("woff2"),
+    url("../fonts/Lato-Black.woff") format("woff");
+  font-style: normal;
+  font-weight: 900;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "TheanoDidot";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/TheanoDidot-Regular.woff2") format("woff2"),
+    url("../fonts/TheanoDidot-Regular.woff") format("woff");
+}

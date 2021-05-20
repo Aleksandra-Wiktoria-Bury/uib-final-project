@@ -1,57 +1,6 @@
-//? FONTS
-
-@font-face {
-  font-family: "LatoWeb";
-  src: url("../fonts/Lato-Regular.woff2") format("woff2"),
-    url("../fonts/Lato-Regular.woff") format("woff");
-  font-style: normal;
-  font-weight: 400;
-  text-rendering: optimizeLegibility;
-}
-@font-face {
-  font-family: "LatoWebBlack";
-  src: url("../fonts/Lato-Black.woff2") format("woff2"),
-    url("../fonts/Lato-Black.woff") format("woff");
-  font-style: normal;
-  font-weight: 900;
-  text-rendering: optimizeLegibility;
-}
-@font-face {
-  font-family: "TheanoDidot";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/TheanoDidot-Regular.woff2") format("woff2"),
-    url("../fonts/TheanoDidot-Regular.woff") format("woff");
-}
-
-//? VARIABLES
-$primary: #fffbf8;
-$secondary: rgb(101, 190, 137);
-$light: #fffbf8;
-$dark: rgb(48, 48, 48);
-
-$body-bg: $primary;
-$body-color: $dark;
-$font-size-xs: 1.2rem;
-$font-size-sm: 1.6rem;
-$font-size-md: 2rem;
-$font-size-lg: 4rem;
-$font-size-xl: 10rem;
-$font-size-xxl: 14rem;
-
-$navbar-toggler-font-size: 2rem;
-
-$hr-color: $dark;
-$hr-height: 2px;
-$hr-opacity: 1;
-
-$table-border-width: 2px;
-$table-border-color: $dark;
-$navbar-light-color: $dark;
-$navbar-light-hover-color: $secondary;
-$link-color: $dark;
-$link-decoration: none;
-$link-hover-color: $secondary;
+@import "../scss/fonts";
+@import "../scss/variables";
+@import "../scss/mixin";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 //? RESET
@@ -59,23 +8,10 @@ $link-hover-color: $secondary;
   font-size: 62.5%;
 }
 
-//? MIXINS
-
-@mixin container-xs {
-  @include media-breakpoint-up(xs) {
-    width: 70%;
-    margin: 0 auto;
-  }
-}
-@mixin container-md {
-  @include media-breakpoint-up(md) {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
 //? Navbar
 body {
-  font-family: "LatoWeb";
+  font-family: "LatoWeb", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .logo {
@@ -96,10 +32,6 @@ body {
   }
   p {
     font-size: $font-size-xs;
-
-    // @include media-breakpoint-up(md) {
-    //   font-size: $font-size-xs;
-
     @include media-breakpoint-up(lg) {
       font-size: $font-size-sm;
       padding-bottom: 8rem;
