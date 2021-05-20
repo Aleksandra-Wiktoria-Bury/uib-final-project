@@ -26,7 +26,7 @@
 
 //? VARIABLES
 $primary: #fffbf8;
-$secondary: rgb(91, 133, 108);
+$secondary: rgb(101, 190, 137);
 $light: #fffbf8;
 $dark: rgb(48, 48, 48);
 
@@ -47,6 +47,11 @@ $hr-opacity: 1;
 
 $table-border-width: 2px;
 $table-border-color: $dark;
+$navbar-light-color: $dark;
+$navbar-light-hover-color: $secondary;
+$link-color: $dark;
+$link-decoration: none;
+$link-hover-color: $secondary;
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 //? RESET
@@ -55,11 +60,6 @@ $table-border-color: $dark;
 }
 
 //? MIXINS
-
-@mixin container-xs {
-  width: 70%;
-  margin: 0 auto;
-}
 
 @mixin container-xs {
   @include media-breakpoint-up(xs) {
@@ -80,7 +80,6 @@ body {
 
 .logo {
   @extend .nav-link;
-  font-family: "TheanoDidot";
   font-size: 3rem;
 }
 .nav-item {
@@ -178,5 +177,16 @@ body {
       font-family: "LatoWebBlack";
       margin-top: 0;
     }
+  }
+}
+
+//? Footer
+footer {
+  min-height: 18rem;
+  font-size: $font-size-xs;
+
+  @include media-breakpoint-up(lg) {
+    font-family: "LatoWebBlack";
+    font-size: $font-size-md;
   }
 }
