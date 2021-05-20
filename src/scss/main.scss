@@ -1,24 +1,4 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
 //? FONTS
-
-@font-face {
-  font-family: "LatoWebThin";
-  src: url("../fonts/Lato-Thin.woff2") format("woff2"),
-    url("../fonts/Lato-Thin.woff") format("woff");
-  font-style: normal;
-  font-weight: 200;
-  text-rendering: optimizeLegibility;
-}
-
-@font-face {
-  font-family: "LatoWebLight";
-  src: url("../fonts/Lato-Light.woff2") format("woff2"),
-    url("../fonts/Lato-Light.woff") format("woff");
-  font-style: normal;
-  font-weight: 300;
-  text-rendering: optimizeLegibility;
-}
 
 @font-face {
   font-family: "LatoWeb";
@@ -28,23 +8,40 @@
   font-weight: 400;
   text-rendering: optimizeLegibility;
 }
+
 @font-face {
-  font-family: "Bona";
+  font-family: "TheanoDidot";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/BonaNova-Regular.woff2") format("woff2"),
-    url("../fonts/BonaNova-Regular.woff") format("woff");
+  src: url("../fonts/TheanoDidot-Regular.woff2") format("woff2"),
+    url("../fonts/TheanoDidot-Regular.woff") format("woff");
 }
-@font-face {
-  font-family: "BonaItalic";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/BonaNova-Italic.woff2") format("woff2"),
-    url("../fonts/BonaNova-Italic.woff") format("woff");
-}
+//? Colors
+
+$primary: #fffbf8;
+$secondary: rgb(91, 133, 108);
+$light: #fffbf8;
+$dark: rgb(48, 48, 48);
+
+$body-bg: $primary;
+$body-color: $primary;
 
 //? RESET
 
 :root {
   font-size: 62.5%;
 }
+
+//? Navbar
+
+.logo {
+  @extend .nav-link;
+  font-family: "TheanoDidot";
+  font-size: 3rem;
+}
+.nav-item {
+  font-size: 1.6rem;
+  font-family: "LatoWeb";
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
