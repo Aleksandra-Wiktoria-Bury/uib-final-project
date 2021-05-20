@@ -41,7 +41,7 @@ body {
 }
 .hero-logo {
   font-family: "LatoWebBlack";
-  font-size: 4rem;
+  font-size: $font-size-lg;
   @include media-breakpoint-up(md) {
     font-size: $font-size-xl;
   }
@@ -91,6 +91,9 @@ body {
 
 //? Project-gallery
 .project-gallery {
+  img {
+    object-fit: cover;
+  }
   @include container-md;
   .row {
     margin-top: 5rem;
