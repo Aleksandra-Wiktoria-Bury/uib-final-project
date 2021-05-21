@@ -7,7 +7,11 @@
 :root {
   font-size: 62.5%;
 }
+::selection {
+  background-color: lighten($secondary, 30%);
+}
 
+//! Projects
 //? Navbar
 body {
   font-family: "LatoWeb", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -123,5 +127,36 @@ footer {
   @include media-breakpoint-up(lg) {
     font-family: "LatoWebBlack";
     font-size: $font-size-md;
+  }
+}
+
+//! Projects end
+//! Contact
+
+.contact {
+  min-height: 60vh;
+  @include container-xs;
+  @include container-md;
+  margin-top: 5rem;
+  @include media-breakpoint-up(md) {
+    margin-top: 10rem;
+  }
+  h2 {
+    font-family: "LatoWebBlack";
+    font-size: $font-size-md;
+  }
+  font-size: $font-size-md;
+}
+.btn-custom {
+  @extend .btn;
+  font-size: $font-size-sm;
+  color: $primary;
+  background-color: $secondary;
+  &:hover {
+    background-color: darken($secondary, 20%);
+    color: $primary;
+  }
+  &:active {
+    border: 3px solid darken($secondary, 10%);
   }
 }
