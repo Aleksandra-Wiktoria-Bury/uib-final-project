@@ -11,7 +11,7 @@
     <header class="bg-primary sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid m-2 ms-lg-5 me-lg-5">
-          <a class="logo text-dark ms-lg-5" href="#">Biuro Arch</a>
+          <a class="logo text-dark ms-lg-5" href="index.html">Biuro Arch</a>
           <button
             class="navbar-toggler border-light"
             type="button"
@@ -26,13 +26,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item me-4">
-                <a class="nav-link ps-4" aria-current="page" href="#">Home</a>
+                <a class="nav-link ps-4" aria-current="page" href="index.html"
+                  >Home</a
+                >
               </li>
+
               <li class="nav-item me-4">
-                <a class="nav-link ps-4" href="#">About</a>
-              </li>
-              <li class="nav-item me-4">
-                <a class="nav-link ps-4" href="index.html">Projects</a>
+                <a class="nav-link ps-4" href="projects.html">Projects</a>
               </li>
               <li class="nav-item me-4">
                 <a class="nav-link ps-4" href="#">Contact</a>
@@ -43,29 +43,31 @@
       </nav>
     </header>
     <main class="container">
-      <section class="contact row g-5">
-        <div class="form col-lg-6">
-          <h2 class="mb-5">Send a message</h2>
-          <div class="mb-3">
-            <label for="e-mail" class="form-label">Email address:</label>
-            <input
-              type="email"
-              class="form-control"
-              id="e-mail"
-              placeholder="name@example.com"
-            />
+      <section class="contact cstm-cont row g-5">
+        <form class="form col-lg-6" action="#" method="">
+          <div>
+            <h2 class="mb-5">Send a message</h2>
+            <div class="mb-3">
+              <label for="e-mail" class="form-label">Email address:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="e-mail"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your message:</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="8"
+                style="resize: none"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-custom mt-4">Submit</button>
           </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Your message:</label>
-            <textarea
-              class="form-control"
-              id="message"
-              rows="8"
-              style="resize: none"
-            ></textarea>
-          </div>
-          <button type="submit" class="btn-custom mt-4">Submit</button>
-        </div>
+        </form>
         <div class="info col-lg-6">
           <h2 class="mb-5">Where to find us</h2>
           <address class="pt-lg-5">

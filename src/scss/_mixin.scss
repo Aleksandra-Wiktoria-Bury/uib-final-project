@@ -2,7 +2,7 @@
 
 @mixin container-xs {
   @include media-breakpoint-up(xs) {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
   }
 }
