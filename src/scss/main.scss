@@ -1,6 +1,7 @@
 @import "../scss/fonts";
 @import "../scss/variables";
 @import "../scss/mixin";
+@import "../scss/animations";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 //? RESET
@@ -48,6 +49,9 @@ footer {
 .project-main {
   @include media-breakpoint-up(md) {
     padding-top: 10rem;
+  }
+  @include media-breakpoint-up(md) {
+    @include slide-in-left;
   }
   p {
     font-size: $font-size-xs;
@@ -111,6 +115,9 @@ footer {
   margin-bottom: 10rem;
   img {
     object-fit: contain;
+    &:hover {
+      box-shadow: 5px 5px 0px 0px $dark;
+    }
   }
   @include container-md;
   .row {
@@ -169,6 +176,9 @@ footer {
 
 .hero {
   margin-top: 5rem;
+  @include media-breakpoint-up(md) {
+    @include slide-in-left;
+  }
   h1 {
     font-family: "LatoWebBlack";
     font-size: $font-size-lg;
@@ -230,7 +240,9 @@ footer {
 
 .contact-btn {
   margin-top: 10rem;
+  @include pulse;
 }
+
 //! Impressum
 .impressum {
   min-height: 60vh;
@@ -272,3 +284,4 @@ footer {
   max-height: 90%;
   padding: 4px;
 }
+//*
