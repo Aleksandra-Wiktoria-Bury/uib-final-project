@@ -29,6 +29,10 @@ footer {
     font-size: $font-size-md;
   }
 }
+.row:before,
+.row:after {
+  display: none !important;
+}
 
 //? Navbar
 
