@@ -159,3 +159,6 @@ This folder will contain your built project, ready to be deployed online. It is 
 Boilerplate created by Itamar Givon ([@itamargiv](https://github.com/itamargiv))
 
 Edited by Fran Borg ([@FranBte](https://github.com/FranBte))
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/998cb877-aa0f-48f2-974f-871b2683d3f6/deploy-status)](https://app.netlify.com/sites/wizardly-heisenberg-d38e95/deploys)
