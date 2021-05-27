@@ -37,7 +37,10 @@ footer {
   font-size: 3rem;
 }
 .nav-item {
-  font-size: $font-size-sm;
+  font-size: $font-size-md;
+  @include media-breakpoint-up(lg) {
+    font-size: $font-size-sm;
+  }
 }
 
 //? Project-main
