@@ -115,9 +115,6 @@ footer {
   margin-bottom: 10rem;
   img {
     object-fit: contain;
-    &:hover {
-      box-shadow: 5px 5px 0px 0px $dark;
-    }
   }
   @include container-md;
   .row {
