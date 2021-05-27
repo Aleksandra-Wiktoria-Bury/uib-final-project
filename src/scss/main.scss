@@ -145,30 +145,22 @@ footer {
 
 .contact {
   min-height: 60vh;
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-bottom: 10rem;
   @include media-breakpoint-up(md) {
     margin-top: 10rem;
   }
   h2 {
     font-family: "LatoWebBlack";
-    font-size: $font-size-md;
+    font-size: $font-size-lg;
   }
   font-size: $font-size-md;
-}
-.btn-custom {
-  @extend .btn;
-  font-size: $font-size-sm;
-  color: $primary;
-  background-color: $secondary;
-  &:hover {
-    background-color: darken($secondary, 20%);
-    color: $primary;
-  }
-  &:active {
-    border: 3px solid darken($secondary, 10%);
+  img {
+    width: 100%;
+    box-shadow: 5px 5px 0px 0px $dark;
   }
 }
+
 //! Contact end
 //! Home/About
 
