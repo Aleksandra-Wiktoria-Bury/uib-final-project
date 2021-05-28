@@ -116,6 +116,7 @@ footer {
   margin-bottom: 10rem;
   img {
     object-fit: contain;
+    width: 100%;
     @include media-breakpoint-up(md) {
       max-width: 60%;
     }
