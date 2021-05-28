@@ -38,7 +38,10 @@ footer {
 
 .logo {
   @extend .nav-link;
-  font-size: 3rem;
+  font-size: $font-size-md;
+  @include media-breakpoint-up(md) {
+    font-size: 3rem;
+  }
 }
 .nav-item {
   font-size: $font-size-md;

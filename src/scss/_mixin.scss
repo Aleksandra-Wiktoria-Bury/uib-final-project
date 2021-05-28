@@ -1,10 +1,8 @@
 //? MIXINS
 
 @mixin container-xs {
-  @include media-breakpoint-up(xs) {
-    width: 80%;
-    margin: 0 auto;
-  }
+  width: 95%;
+  margin: 0 auto;
 }
 @mixin container-md {
   @include media-breakpoint-up(md) {
