@@ -29,10 +29,6 @@ footer {
     font-size: $font-size-md;
   }
 }
-.row:before,
-.row:after {
-  display: none !important;
-}
 
 //? Navbar
 
@@ -120,12 +116,8 @@ footer {
   margin-bottom: 10rem;
   img {
     object-fit: contain;
-    width: 100%;
     @include media-breakpoint-up(md) {
-      max-width: 50vw;
-    }
-    @include media-breakpoint-up(xl) {
-      max-width: 40vw;
+      max-width: 60%;
     }
   }
   @include container-md;
