@@ -182,7 +182,7 @@ footer {
     font-size: $font-size-lg;
     text-transform: uppercase;
     overflow-wrap: break-word;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(xl) {
       font-size: $font-size-xl;
     }
   }
@@ -217,6 +217,7 @@ footer {
     margin-top: 20rem;
   }
   h2 {
+    text-transform: uppercase;
     font-size: $font-size-lg;
     font-family: "LatoWebBlack";
   }
